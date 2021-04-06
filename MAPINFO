@@ -1,0 +1,143 @@
+// Copyright (c) 2017, MIO Project
+// All rights reserved.
+// 
+// 							<BSD 3-Clause license>
+// Redistribution and use in source and binary forms, with or without
+// modification, are permitted provided that the following conditions are met:
+//    * Redistributions of source code must retain the above copyright
+//      notice, this list of conditions and the following disclaimer.
+//    * Redistributions in binary form must reproduce the above copyright
+//      notice, this list of conditions and the following disclaimer in the
+//      documentation and/or other materials provided with the distribution.
+//    * Neither the name of the MIO Project nor the
+//      names of its contributors may be used to endorse or promote products
+//      derived from this software without specific prior written permission.
+// 
+// THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+// ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+// WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+// DISCLAIMED. IN NO EVENT SHALL MIO PROJECT BE LIABLE FOR ANY
+// DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+// (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+// LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+// ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+// (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+// SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+gameinfo
+{
+	drawreadthis = true	
+}
+
+clearskills 
+
+skill Easy
+{
+	name = "Easy"
+	AmmoFactor = 0.9
+	DropAmmoFactor = 0.1
+	DamageFactor = 0.5
+	RespawnTime = 0
+	Aggressiveness = 0.0
+	SpawnFilter = 1
+	ACSReturn = 0
+	Key = 1
+	//TextColor = Blue
+	EasyKey
+	DisableCheats
+	MonsterHealth = 0.5
+	FriendlyHealth = 0.5
+	ArmorFactor = 1.0
+	//HealthFactor = 0.5
+}
+
+skill Medium
+{
+	name = "Medium"
+	AmmoFactor = 1.0
+	DropAmmoFactor = 0.6
+	DamageFactor = 1.0
+	RespawnTime = 0
+	Aggressiveness = 0.1
+	SpawnFilter = 2
+	ACSReturn = 1
+	Key = 2
+	//TextColor = Blue
+	DisableCheats
+	MonsterHealth = 0.5
+	FriendlyHealth = 0.5
+	ArmorFactor = 1.0
+	//HealthFactor = 0.5
+}
+
+skill Hard
+{
+	name = "Hard"
+	DefaultSkill
+	AmmoFactor = 1.1
+	DropAmmoFactor = 1.1
+	DamageFactor = 1.5
+	RespawnTime = 0
+	Aggressiveness = 0.2
+	SpawnFilter = 3
+	ACSReturn = 2
+	Key = 3
+	//TextColor = Blue
+	DisableCheats
+	MonsterHealth = 0.5
+	FriendlyHealth = 0.5
+	ArmorFactor = 1.0
+	//HealthFactor = 0.5
+}
+
+skill Extreme
+{
+	name = "Extreme"
+	AmmoFactor = 1.2
+	DropAmmoFactor = 1.6
+	DamageFactor = 2.0
+	RespawnTime = 0
+	Aggressiveness = 0.3
+	SpawnFilter = 4
+	ACSReturn = 3
+	Key = 4
+	//TextColor = Blue
+	//DisableCheats
+	MonsterHealth = 0.5
+	FriendlyHealth = 0.5
+	ArmorFactor = 1.0
+	//HealthFactor = 0.5
+}
+
+map MAP01 "A hard beginning"
+{
+	LevelNum         = 01
+	Next             = MAP02
+	Cluster          = 1
+	Sky1             = SKY1, 0.1
+	SuckTime         = 1
+	Gravity          = 800
+	AirSupply        = 60
+	//AllowMonsterTelefrags
+	AllowJump
+	AllowCrouch
+	AllowFreelook
+	NormalInfighting
+	Music            = D_ROMERO // Placeholder music
+}
+
+map MAP02 "Far from the city"
+{
+	LevelNum         = 02
+	Next             = MAP07
+	Cluster          = 1
+	Sky1             = SKY1, 0.1
+	SuckTime         = 1
+	Gravity          = 800
+	AirSupply        = 60
+	//AllowMonsterTelefrags
+	AllowJump
+	AllowCrouch
+	AllowFreelook
+	NormalInfighting
+}
