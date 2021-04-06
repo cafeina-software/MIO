@@ -1,0 +1,4 @@
+#library "miocommon"
+#include "zcommon.acs"
+
+#libdefine MIODUMMY 3.1415926535
